@@ -85,6 +85,14 @@ header .today-date span{
     font-size: 15px;
 }
 
+header .social-media {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-between;
+    align-items: end;
+}
+
 
 header .social-media a{
     text-decoration: none;

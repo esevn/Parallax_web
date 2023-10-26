@@ -85,23 +85,33 @@ header .today-date span{
     font-size: 15px;
 }
 
-header .social-media {
-    display: flex;
-    list-style: none;
-    width: 300px;
-    justify-content: space-between;
-    align-items: end;
-}
 
 header .social-media a{
     text-decoration: none;
     color: #fff;
     transition: all 0.5s;
+    padding: 2px 0;
+    position: relative;
+}
+
+header .social-media a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #0011ff;;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: all 0.5s;
+}
+
+header .social-media a:hover::after {
+    width: 100%;
 }
 
 header .social-media a:hover {
     font-size: 18px;
-    color: #e100ff;
+    color: #515cff;
 }
 /* Aboout Section */
 
